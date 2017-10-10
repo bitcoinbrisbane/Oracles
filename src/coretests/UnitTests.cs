@@ -12,7 +12,7 @@ namespace coretests
     {
         public UnitTests()
         {
-            Object[] constructorParms = new Object[];;
+            Object[] constructorParms = new Object[0];
             DeplyContract(contractPath, contractName, constructorParms);
         }
 
@@ -23,7 +23,8 @@ namespace coretests
             var functionToTest = contract.GetFunction("newPrice");
 
             var actual = functionToTest.CallAsync<UInt64>().Result;
-            Assert.Equal(0, actual);
+            UInt64 expected = 0;
+            Assert.Equal(expected, actual);
         }
 
         public void Should_Add_New_Price()
@@ -32,7 +33,7 @@ namespace coretests
             var functionToTest = contract.GetFunction("newPrice");
 
             Nethereum.Hex.HexTypes.HexBigInteger gas = new Nethereum.Hex.HexTypes.HexBigInteger(2000000);
-            BigInteger ethToSend = Nethereum.Util.UnitConversion.Convert.ToWei(amount, Nethereum.Util.UnitConversion.EthUnit.Ether);
+            BigInteger ethToSend = Nethereum.Util.UnitConversion.Convert.ToWei(0, Nethereum.Util.UnitConversion.EthUnit.Ether);
             Nethereum.Hex.HexTypes.HexBigInteger eth = new Nethereum.Hex.HexTypes.HexBigInteger(ethToSend); 
 
             Object[] functionParams = new Object[0];

@@ -12,7 +12,7 @@ namespace coretests
     {
         public UnitTests()
         {
-            Object[] constructorParms = new Object[];;
+            Object[] constructorParms = new Object[0];
             DeplyContract(contractPath, contractName, constructorParms);
         }
 
