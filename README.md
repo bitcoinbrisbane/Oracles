@@ -25,10 +25,15 @@ Create a dot net core app to call the node / smart contract using Nethereum
     dotnet new xunit
     dotnet add package Nethereum.Portable --version 2.0.1
     dotnet restore
-    
+    dotnet test
 
 ## Notes
 Contract owner 0xe2356d29d5dfecb4ee43c031204aeded24749959.  scripts.sh will start a test rpc node.
 ```
 testrpc --account="0x221bbb8b9b508c2841a60f862e9d03c19997f99ee83db94e077ff180265247,100000000000000000000"
+```
+
+Copy script
+```
+cp coretests_helpers/*.cs coretests
 ```
