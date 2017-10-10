@@ -1,0 +1,52 @@
+{
+  "contract_name": "AUDOracle",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "newPrice",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Updated",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60018054600160a060020a03191633600160a060020a03161790555b5b6101108061003c6000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633fa4f24581146046578063fe72ac7f146068575b600080fd5b3415605057600080fd5b6056607d565b60405190815260200160405180910390f35b3415607257600080fd5b607b6004356083565b005b60005481565b6001543373ffffffffffffffffffffffffffffffffffffffff90811691161460aa57600080fd5b6000547f208509800c5cb9707f116ef96a1d456499ab9fa3c8edc1cdf381fe5216d5b1739060405190815260200160405180910390a15b505600a165627a7a72305820bf6b6ed0f84435fec63faea6dc9c2ffd9a25dd97bbce22dd3244fbd048e616670029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1507622182976
+}
