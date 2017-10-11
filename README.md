@@ -16,12 +16,12 @@ Ill stream the event live on the Blockchain Australia’s YouTube channel.
 
 ## Agenda
 
-Develop a smart contract in Visual Studio Code
-Use truffle to deploy to testrpc
-Create a python script to call the node / smart contract, using the price feed from https://api.cryptowat.ch/markets/quoine/ethaud/price
+1. Develop a smart contract in Visual Studio Code
+2. Use truffle to deploy to testrpc
+3. Create a python script to call the node / smart contract, using the price feed from https://api.cryptowat.ch/markets/quoine/ethaud/price
     pip install 'jsonrpcclient[requests]'
     pip install ethjsonrpc
-Create a dot net core app to call the node / smart contract using Nethereum
+4.  Create a dot net core app to call the node / smart contract using Nethereum
     dotnet new xunit
     dotnet add package Nethereum.Portable --version 2.0.1
     dotnet restore
